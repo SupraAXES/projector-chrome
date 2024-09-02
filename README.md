@@ -16,9 +16,8 @@ To use **projector-chrome** for [**SupraRBI-VNC**](https://github.com/supraaxes/
 docker run --name rbi-vnc -d \
     --network supra-projector \
 	-p 5900:5900 \
-	-e SUPRA_RBI_NAME='rbi-vnc' \
 	-e SUPRA_PROJECTOR_NETWORK='supra-projector' \
 	-e SUPRA_PROJECTOR_IMAGE='supraaxes/projector-chrome' \
 	-v /var/run/docker.sock:/var/run/docker.sock \
-	vnc_rbi
+    supraaxes/suprarbi-vnc
 ```
